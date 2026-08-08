@@ -1,0 +1,28 @@
+/* ==========================================
+   RATUL ANICK PAUL
+   GLOBAL CSS VARIABLES
+========================================== */
+
+:root{
+    /* colors */
+    --white:#ffffff;
+    --primary:#0B1F3A;
+    --primary-light:#14335C;
+    --accent:#E74C3C;
+    --accent-dark:#C0392B;
+    --text:#1C2430;
+    --text-light:#5C6B7A;
+    --section:#F4F6F9;
+    --border:#E1E6ED;
+
+    /* elevation */
+    --shadow:0 20px 50px rgba(11,31,58,.10);
+    --shadow-sm:0 8px 20px rgba(11,31,58,.06);
+
+    /* type */
+    --font-display:'Poppins',sans-serif;
+    --font-mono:'IBM Plex Mono',monospace;
+
+    /* motion */
+    --transition:all .3s ease;
+}
