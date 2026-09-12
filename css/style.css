@@ -159,15 +159,15 @@ section:last-of-type{ border-bottom:none; }
 
 .hero-portrait{ display:flex; justify-content:center; }
 .hero-portrait img{
-  width:min(280px,100%); aspect-ratio:1/1; object-fit:cover;
-  border-radius:var(--radius-lg); border:1px solid var(--border); box-shadow:var(--shadow);
+  width:220px; height:220px; max-width:100%; object-fit:cover;
+  border-radius:50%; border:1px solid var(--border); box-shadow:var(--shadow);
 }
 
 .hero-facts{
   display:flex; gap:2.2rem; margin-top:2.6rem; flex-wrap:wrap;
   border-top:1px solid var(--border); padding-top:1.6rem;
 }
-.hero-facts div strong{ display:block; font-family:var(--font-serif); font-size:1.5rem; color:var(--ink); }
+.hero-facts div strong{ display:block; font-family:var(--font-serif); font-size:1.5rem; color:var(--accent-2); }
 .hero-facts div span{ font-size:.85rem; color:var(--text-muted); }
 
 /* ---------------- About ---------------- */
@@ -214,10 +214,10 @@ section:last-of-type{ border-bottom:none; }
 
 /* ---------------- Featured project / thesis ---------------- */
 .feature-panel{
-  background:var(--paper-raised); border:1px solid var(--border); border-left:4px solid var(--accent); border-radius:var(--radius-lg);
+  background:var(--paper-raised); border:1px solid var(--border); border-left:4px solid var(--accent-2); border-radius:var(--radius-lg);
   padding:2.2rem; box-shadow:var(--shadow-sm); margin-top:2.5rem;
 }
-.feature-panel .eyebrow{ margin-bottom:.4em; }
+.feature-panel .eyebrow{ margin-bottom:.4em; background:var(--accent-2-soft); color:var(--accent-2); }
 .feature-panel h3{ font-size:1.4rem; margin-bottom:.5em; }
 .feature-meta{ display:flex; flex-wrap:wrap; gap:.5rem 1.4rem; margin:1rem 0 1.4rem; font-size:.9rem; color:var(--text-muted); }
 .feature-meta strong{ color:var(--ink-soft); font-weight:600; }
@@ -302,7 +302,7 @@ section:last-of-type{ border-bottom:none; }
 .cert-list li:last-child{ border-bottom:none; }
 .cert-list .cert-icon{
   flex:none; width:34px; height:34px; margin-top:.1em; border-radius:8px; display:flex; align-items:center; justify-content:center;
-  background:var(--accent-soft); color:var(--accent);
+  background:var(--accent-2-soft); color:var(--accent-2);
 }
 .cert-list .cert-icon svg{ width:16px; height:16px; }
 .cert-list .cert-body{ flex:1; }
@@ -351,7 +351,7 @@ footer a{ color:var(--text-muted); }
 @media (max-width:860px){
   .hero-grid{ grid-template-columns:1fr; gap:2.2rem; }
   .hero-portrait{ order:-1; }
-  .hero-portrait img{ width:150px; margin:0 auto; }
+  .hero-portrait img{ width:150px; height:150px; margin:0 auto; }
   .about-grid{ grid-template-columns:1fr; }
   .cert-grid{ grid-template-columns:1fr; }
   .contact-panel{ grid-template-columns:1fr; }
