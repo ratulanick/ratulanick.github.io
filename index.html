@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0d0f14">
 <title>Ratul Anick Paul — Mechanical Engineer &amp; Applied Researcher</title>
 <meta name="description" content="Ratul Anick Paul is a mechanical engineer and applied researcher working on IoT-based predictive maintenance, HVAC and energy systems, and industrial AI for pharmaceutical manufacturing.">
 <link rel="canonical" href="https://ratulanick.github.io/">
@@ -61,7 +63,6 @@
       <div>
         <span class="eyebrow">Mechanical Engineer · Applied Researcher</span>
         <h1>Ratul Anick Paul</h1>
-        <p class="role-line">Deputy Manager, Engineering — Renata PLC · M.Sc. in Information Technology, Jahangirnagar University</p>
         <p class="lede">I work at the intersection of industrial engineering and applied research, building IoT-based predictive maintenance and digital twin systems while optimizing HVAC, utility and energy systems for regulated pharmaceutical manufacturing.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#research">View Research</a>
@@ -71,6 +72,7 @@
         <div class="hero-facts">
           <div><strong>10+</strong><span>Years, Industrial Engineering</span></div>
           <div><strong>3</strong><span>Manufacturing Industries</span></div>
+          <div><strong>B.Sc.</strong><span>Mechanical Engineering, 2016</span></div>
           <div><strong>M.Sc.</strong><span>AI &amp; Predictive Maintenance, 2026</span></div>
         </div>
       </div>
@@ -87,7 +89,6 @@
       <div class="about-body reveal">
         <div class="section-head">
           <span class="eyebrow">About</span>
-          <h2>From mechanical design to industrial AI</h2>
         </div>
 
         <p>I am a mechanical engineer with ten years of experience across appliance manufacturing and pharmaceutical production, currently Deputy Manager, Engineering at Renata PLC in Dhaka, Bangladesh. My career moved from refrigeration and HVAC product R&amp;D at Walton Hi-Tech Industries, to cleanroom HVAC and utility engineering at Square Pharmaceuticals, to engineering leadership at Renata, where I manage HVAC, utility and energy systems for a US FDA, UK MHRA and EU GMP-approved facility.</p>
@@ -155,6 +156,8 @@
           <div class="tag-row">
             <span class="tag">HVAC Design</span>
             <span class="tag">Energy Management</span>
+            <span class="tag">Energy Efficiency</span>
+            <span class="tag">Energy Auditing</span>
             <span class="tag">Cleanroom Systems</span>
           </div>
         </article>
@@ -176,7 +179,6 @@
         <span class="eyebrow">Featured Research Project</span>
         <h3>IoT-Based Industrial Machine Failure Prediction System with Real-Time Notification</h3>
         <p>A low-cost, multi-sensor predictive maintenance prototype built around an ESP32 microcontroller, developed as my M.Sc. project and validated on live industrial equipment. Now used operationally within my organization, with a patent application in preparation and a digital-twin extension under review at a Q1 journal.</p>
-        <a class="btn btn-outline" href="#thesis">Read the full project details ↓</a>
       </div>
     </div>
   </section>
@@ -199,23 +201,21 @@
 
       <div class="thesis-block reveal">
         <h4>Problem &amp; Motivation</h4>
-        <p>Industrial teams commonly rely on run-to-failure or fixed-interval preventive maintenance, leading to excessive downtime or premature component replacement. Commercial predictive maintenance platforms address this but are expensive and manufacturer-specific, a gap made more acute in pharmaceutical manufacturing's strict production windows, so this project set out to build a simple, low-cost, multi-sensor alternative.</p>
+        <p>Industrial teams often rely on run-to-failure or fixed-interval maintenance, causing downtime or premature replacement. Commercial predictive-maintenance platforms are expensive and manufacturer-specific, a gap this project addressed with a simple, low-cost, multi-sensor alternative.</p>
       </div>
 
       <div class="thesis-block reveal">
         <h4>Objectives</h4>
         <ul>
-          <li>Continuously monitor key machine health indicators, vibration, acoustic noise and temperature, using an ESP32 microcontroller with dedicated sensors.</li>
-          <li>Provide a real-time interface for monitoring live sensor data.</li>
-          <li>Automatically alert maintenance personnel by email when monitored values exceed set thresholds.</li>
-          <li>Log sensor readings over time to support failure-trend analysis.</li>
+          <li>Continuously monitor vibration, acoustic noise and temperature via an ESP32 with dedicated sensors, with a real-time dashboard for live readings.</li>
+          <li>Automatically email maintenance personnel when thresholds are exceeded, and log readings over time for failure-trend analysis.</li>
           <li>Deliver a cost-effective, scalable full-system prototype.</li>
         </ul>
       </div>
 
       <div class="thesis-block reveal">
         <h4>System Architecture &amp; Technology</h4>
-        <p>An ESP32 microcontroller forms the core, reading three sensors: an SW-420 for vibration, an LM393 module for acoustic sensing, and a 10k NTC (103) thermistor for temperature. Data is transmitted over Wi-Fi to the Blynk IoT platform for live dashboards and automated email alerts, and to Google Apps Script for historical logging in Google Sheets. The unit runs from a single 5V DC / USB-C supply.</p>
+        <p>An ESP32 microcontroller reads three sensors — an SW-420 (vibration), an LM393 module (acoustic) and a 10k NTC (103) thermistor (temperature) — and sends data over Wi-Fi to the Blynk IoT platform for live dashboards and email alerts, and to Google Sheets via Apps Script for logging. Powered by a single 5V DC / USB-C supply.</p>
 
         <div class="thesis-grid">
           <div class="mini">
@@ -235,17 +235,17 @@
 
       <div class="thesis-block reveal">
         <h4>Validation</h4>
-        <p>The prototype was tested on real industrial assets, including diesel generators, a pharmaceutical blister packaging machine, an air handling unit and an outdoor chiller compressor, confirming correct sensor, dashboard and email-alert behavior under real operating conditions. Equipment-specific details and site photographs are withheld as they relate to third-party industrial facilities.</p>
+        <p>Tested on real industrial assets — diesel generators, a pharmaceutical blister packaging machine, an air handling unit and an outdoor chiller compressor — confirming correct sensor, dashboard and alert behavior under real operating conditions. Equipment-specific details and photos are withheld as they relate to third-party facilities.</p>
       </div>
 
       <div class="thesis-block reveal">
         <h4>Contribution &amp; Outcome</h4>
-        <p>The project delivered a working, low-cost, multi-sensor predictive maintenance prototype, a viable alternative to expensive commercial platforms, with real-time alerting and cloud-based data logging. Accepted in partial fulfilment of the M.Sc. degree in October 2025, it was developed further into a conference paper for the 9th European IEOM Conference (2026), and is now used operationally within Ratul's organization, with a patent application in preparation.</p>
+        <p>Delivered a working, low-cost predictive maintenance prototype with real-time alerting and cloud logging, a viable alternative to expensive commercial platforms. Accepted in partial fulfilment of the M.Sc. degree (October 2025), developed further into a conference paper for the 9th European IEOM Conference (2026), and now used operationally within my organization, with a patent application in preparation.</p>
       </div>
 
       <div class="thesis-block reveal">
         <h4>Limitations &amp; Future Work</h4>
-        <p>As a prototype, its limitations include indicative (not reference-grade) sensor readings, no on-device logging during Wi-Fi outages, and an enclosure not yet rated for harsh environments. Future work includes industrial-grade calibration, offline SD-card logging, SMS alerting, additional sensor types (gas, voltage, flame) and ML-based adaptive thresholds, directions that continue to shape my current research.</p>
+        <p>Limitations include indicative (not reference-grade) sensor readings, no offline logging during Wi-Fi outages, and an enclosure not yet rated for harsh environments. Future work — industrial-grade calibration, offline SD-card logging, SMS alerts, additional sensors, and ML-based adaptive thresholds — continues to shape my current research.</p>
       </div>
     </div>
   </section>

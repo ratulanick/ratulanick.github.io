@@ -1,29 +1,32 @@
 /* ==========================================================
    Ratul Anick Paul — Design Tokens
+   Elegant dark-first theme: dark is the default look; an
+   explicit light override is available via the theme toggle
+   (persisted through data-theme="light").
    ========================================================== */
 
 :root{
-  /* ---- Light palette (default) ---- */
-  --paper:#faf9f6;
-  --paper-raised:#ffffff;
-  --paper-sunken:#f1efe8;
-  --ink:#16233d;
-  --ink-soft:#3b4763;
-  --text:#282c34;
-  --text-muted:#5b6270;
-  --border:#e4e1d8;
-  --border-strong:#cfccc0;
-  --accent:#8a2432;
-  --accent-soft:#f4e6e4;
-  --accent-2:#a6720d;
-  --accent-2-soft:#f7ecd6;
-  --link:#1b3a63;
-  --focus:#1b6ea8;
-  --status-published:#2f5d3a;
-  --status-progress:#8a5a17;
-  --status-review:#5b4a9e;
-  --shadow:0 16px 40px rgba(22,35,61,.08);
-  --shadow-sm:0 4px 14px rgba(22,35,61,.06);
+  /* ---- Dark palette (default) ---- */
+  --paper:#0d0f14;
+  --paper-raised:#171a22;
+  --paper-sunken:#090a0d;
+  --ink:#f4f1ea;
+  --ink-soft:#cfc9ba;
+  --text:#c7c9d1;
+  --text-muted:#8a8d98;
+  --border:#262a33;
+  --border-strong:#383d49;
+  --accent:#d4af6a;
+  --accent-soft:#2a2214;
+  --accent-2:#7fa896;
+  --accent-2-soft:#14201d;
+  --link:#9bcbba;
+  --focus:#6fb3e0;
+  --status-published:#7fbf8e;
+  --status-progress:#e0b563;
+  --status-review:#b3a3e8;
+  --shadow:0 24px 60px rgba(0,0,0,.55);
+  --shadow-sm:0 8px 22px rgba(0,0,0,.4);
 
   /* ---- Type ---- */
   --font-serif:'Source Serif 4', Georgia, 'Times New Roman', serif;
@@ -31,56 +34,32 @@
   --font-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* ---- Rhythm ---- */
-  --radius:6px;
-  --radius-lg:10px;
+  --radius:8px;
+  --radius-lg:12px;
   --max-w:1120px;
   --transition:180ms ease;
 }
 
-:root[data-theme="dark"]{
-  --paper:#14171c;
-  --paper-raised:#1b1f26;
-  --paper-sunken:#0f1216;
-  --ink:#eef1f6;
-  --ink-soft:#c4cbdb;
-  --text:#dfe2e8;
-  --text-muted:#9aa1b0;
-  --border:#2b2f38;
-  --border-strong:#3a3f4a;
-  --accent:#d97b86;
-  --accent-soft:#2c1c1f;
-  --accent-2:#e8b84f;
-  --accent-2-soft:#332912;
-  --link:#8fb4e3;
-  --focus:#6fb3e0;
-  --status-published:#7fbf8e;
-  --status-progress:#e0b563;
-  --status-review:#b3a3e8;
-  --shadow:0 16px 40px rgba(0,0,0,.35);
-  --shadow-sm:0 4px 14px rgba(0,0,0,.3);
-}
-
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --paper:#14171c;
-    --paper-raised:#1b1f26;
-    --paper-sunken:#0f1216;
-    --ink:#eef1f6;
-    --ink-soft:#c4cbdb;
-    --text:#dfe2e8;
-    --text-muted:#9aa1b0;
-    --border:#2b2f38;
-    --border-strong:#3a3f4a;
-    --accent:#d97b86;
-    --accent-soft:#2c1c1f;
-    --accent-2:#e8b84f;
-    --accent-2-soft:#332912;
-    --link:#8fb4e3;
-    --focus:#6fb3e0;
-    --status-published:#7fbf8e;
-    --status-progress:#e0b563;
-    --status-review:#b3a3e8;
-    --shadow:0 16px 40px rgba(0,0,0,.35);
-    --shadow-sm:0 4px 14px rgba(0,0,0,.3);
-  }
+/* Explicit light choice (via theme toggle, persisted in localStorage) */
+:root[data-theme="light"]{
+  --paper:#f7f3ea;
+  --paper-raised:#ffffff;
+  --paper-sunken:#efe9db;
+  --ink:#20232b;
+  --ink-soft:#4a4d58;
+  --text:#33363f;
+  --text-muted:#6b6e78;
+  --border:#e2ddcf;
+  --border-strong:#cfc8b4;
+  --accent:#7d5f1c;
+  --accent-soft:#f3ead2;
+  --accent-2:#3d6657;
+  --accent-2-soft:#e6efe9;
+  --link:#3d6657;
+  --focus:#1b6ea8;
+  --status-published:#2f5d3a;
+  --status-progress:#8a5a17;
+  --status-review:#5b4a9e;
+  --shadow:0 16px 40px rgba(22,35,61,.08);
+  --shadow-sm:0 4px 14px rgba(22,35,61,.06);
 }
