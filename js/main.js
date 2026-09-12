@@ -5,12 +5,14 @@
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- Theme toggle ---------- */
+  /* Dark is the default, unconditional look (elegant dark-first design).
+     Light is available as an explicit, persisted opt-in via the toggle. */
   var themeToggle = document.querySelector('.theme-toggle');
   var THEME_KEY = 'rap-theme';
 
   function applyTheme(theme) {
-    if (theme === 'dark' || theme === 'light') {
-      root.setAttribute('data-theme', theme);
+    if (theme === 'light') {
+      root.setAttribute('data-theme', 'light');
     } else {
       root.removeAttribute('data-theme');
     }
@@ -19,14 +21,13 @@
   function currentEffectiveTheme() {
     var stored = null;
     try { stored = localStorage.getItem(THEME_KEY); } catch (e) { /* storage unavailable */ }
-    if (stored === 'dark' || stored === 'light') return stored;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return stored === 'light' ? 'light' : 'dark';
   }
 
   try {
     var stored = localStorage.getItem(THEME_KEY);
-    if (stored === 'dark' || stored === 'light') applyTheme(stored);
-  } catch (e) { /* storage unavailable, fall back to system preference via CSS */ }
+    if (stored === 'light') applyTheme('light');
+  } catch (e) { /* storage unavailable, default dark applies via CSS */ }
 
   if (themeToggle) {
     themeToggle.addEventListener('click', function () {
